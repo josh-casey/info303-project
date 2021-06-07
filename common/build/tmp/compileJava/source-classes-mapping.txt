@@ -1,0 +1,14 @@
+domain/Summary.java
+ domain.Summary
+domain/ErrorMessage.java
+ domain.ErrorMessage
+domain/Totals.java
+ domain.Totals
+domain/SaleItem.java
+ domain.SaleItem
+domain/Customer.java
+ domain.Customer
+domain/Account.java
+ domain.Account
+domain/Sale.java
+ domain.Sale

@@ -1,0 +1,8 @@
+service/SalesService.java
+ service.SalesService
+dao/SaleDAO.java
+ dao.SaleDAO
+resource/CustomerSalesResource.java
+ resource.CustomerSalesResource
+resource/SalesResource.java
+ resource.SalesResource

@@ -1,0 +1,19 @@
+plugins {
+	id 'application'
+}
+
+dependencies {
+	implementation project(':common')
+
+	def joobyVer =  '1.6.8'
+	implementation group: 'org.jooby', name: 'jooby-netty', version: joobyVer
+	implementation group: 'org.jooby', name: 'jooby-gson', version: joobyVer
+	implementation group: 'org.jooby', name: 'jooby-apitool', version: joobyVer
+	implementation group: 'com.google.guava', name: 'guava', version: '30.1.1-jre'
+}
+
+run {
+	standardInput = System.in
+}
+
+mainClassName = 'service.SalesService'

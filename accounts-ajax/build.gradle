@@ -1,0 +1,23 @@
+plugins {
+	id 'application'
+}
+
+sourceSets {
+	web {
+		resources {
+			srcDirs = ['public']
+		}
+		java{
+			srcDirs = []
+		}
+	}
+}
+
+dependencies {
+	implementation project (':common')
+
+	def joobyVer =  '1.6.8'
+	compile group: 'org.jooby', name: 'jooby-netty', version: joobyVer
+}
+
+mainClassName = 'server.AjaxWebServer'

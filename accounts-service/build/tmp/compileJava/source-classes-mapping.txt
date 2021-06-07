@@ -1,0 +1,8 @@
+resource/AccountResource.java
+ resource.AccountResource
+service/AccountsService.java
+ service.AccountsService
+resource/AccountCollectionResource.java
+ resource.AccountCollectionResource
+dao/AccountsDAO.java
+ dao.AccountsDAO

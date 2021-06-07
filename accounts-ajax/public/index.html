@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="CustomerModule">
+    <head>
+        <title>Customer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-resource.min.js"></script>
+        <script src="js/customer.js"></script>
+    </head>
+    <body>
+        <h2>Account Creation</h2>
+        <div ng-controller="CustomerController as custCtrl">
+            <fieldset>
+                <form ng-submit="custCtrl.createCustomer(customer)">
+                    <label>Username:</label>
+                    <input type="text" ng-model="customer.username"><br>
+                    <label>First Name:</label>
+                    <input type="text" ng-model="customer.firstName"><br>
+                    <label>Last Name:</label>
+                    <input type="text" ng-model="customer.lastName"></br>
+                    <label>E-mail:</label>
+                    <input type="text" ng-model="customer.email"><br>
+                    <br>
+                    <button type="submit">Create Account</button>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

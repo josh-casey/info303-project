@@ -1,0 +1,13 @@
+plugins {
+	id 'application'
+}
+
+dependencies {
+	implementation project(':common')
+
+	def joobyVer =  '1.6.8'
+	implementation group: 'org.jooby', name: 'jooby-netty', version: joobyVer
+	implementation group: 'org.jooby', name: 'jooby-gson', version: joobyVer
+}
+
+mainClassName = 'service.AccountsService'
